@@ -1,0 +1,143 @@
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__title-container {
+        margin-top: 47px;
+        width: 100%;
+    }
+
+    &__title-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 56px;
+        margin-top: 5px;
+        line-height: 115%;
+        color: $DefFontColor;
+        font-weight: bold;
+        text-align: center;
+
+        @media (max-width: 1200px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 780px) {
+            font-size: 24px;
+        }
+    }
+
+    &__description {
+        font-size: 26px;
+        line-height: 134%;
+        max-width: 70%;
+        color: $DefFontColor;
+        text-align: center;
+
+        @media (max-width: 780px) {
+            font-size: 20px;
+        }
+    }
+
+    &__present {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        margin-top: 8px;
+
+        &-list {
+
+            @media (max-width: 780px) {
+                width: 100%;
+                min-width: 360px;
+
+                @media (max-width: 500px) {
+                    width: 100%;
+                    min-width: 320px;
+                }
+            }
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 3px;
+
+             @media (max-width: 780px) {
+                flex-direction: row;
+                column-gap: 10px;
+                align-items: center;
+             }
+        }
+
+        &-title {
+            font-size: 22px;
+            color: $DefFontColor;
+            font-weight: bold;
+            text-align: center;
+
+            @media (max-width: 780px) {
+                font-size: 18px;
+            }
+        }
+
+        &-description {
+            font-size: 18px;
+            color: $DefFontColor;
+            text-align: center;
+        }
+    }
+}
+
+.point-item {
+    float: left;
+    margin-left: 35px;
+
+    @media (max-width: 780px) {
+        float: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+.drill-item {
+    float: right;
+
+    @media (max-width: 780px) {
+        float: none;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+}
+
+.soil-item {
+    margin-top: 2px;
+    margin-right: 62px;
+    margin-left: 81px;
+
+    @media (max-width: 780px) {
+        justify-content: center;
+        margin: 30px auto 0;
+    }
+}
+
+.point {
+    width: 70px;
+}
+
+.soil {
+    width: 230px;
+}
+
+.drill {
+    width: 110px;
+}

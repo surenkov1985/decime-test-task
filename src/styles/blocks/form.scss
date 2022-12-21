@@ -1,0 +1,224 @@
+.form {
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    z-index: 10;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1000px;
+        padding: 17px 20px 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: $DefFontColor;
+        margin-top: 45px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 10.607px 10.607px 62px 0px rgba(46, 46, 46, 0.19);
+        position: relative;
+        row-gap: 17px;
+
+        @media (max-width: 500px) {
+            padding: 20px 25px 30px;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        width: 49%;
+        position: absolute;
+        border: 10px solid $DefFontColor;
+        border-bottom-color: $DefFontColor;
+        bottom: 99.9%;
+        z-index: 0;
+    }
+
+    &::before {
+        border-radius: 0 15px 0 0;
+        right: 0;
+        clip-path: polygon(30px 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    &::after {
+        border-radius: 15px 0 0 0;
+        left: 0;
+        clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0% 100%);
+    }
+
+    &__label {
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 23px 20px;
+        border: 1px solid $InputColor;
+        border-radius: 50px;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+
+        @media (max-width: 780px) {
+            padding: 23px 15px;
+        }
+
+        &.error {
+            border-color: $InputColor;
+            background: $DefFontColor;
+            animation-name: err;
+            animation-duration: .1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+
+    &__input {
+        font-size: 18px;
+        width: 100%;
+        color: $InputColor;
+        outline: none;
+        border: none;
+        background: none;
+
+        @media (max-width: 1200px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 18px;
+        }
+    }
+
+    &__submit {
+        font-size: 20px;
+        font-weight: bold;
+        min-width: 32%;
+        max-width: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $ButtonColor;
+        padding: 20px;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        border-bottom: 4px solid $ButtonBorder;
+        background: -webkit-linear-gradient(180deg, #ffe694, #ffd23a);
+        background: -moz-linear-gradient(180deg, #ffe694, #ffd23a);
+        background: linear-gradient(180deg, #ffe694, #ffd23a);
+        cursor: pointer;
+
+        & > span {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+
+    &__polytik {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 10;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+
+        &-text {
+            font-size: 12px;
+            font-family: $PolytikFont;
+            text-align: center;
+
+            @media (max-width: 500px) {
+                font-size: 11px;
+            }
+        }
+
+        &-link {
+            font-size: 12px;
+            font-family: $PolytikFont;
+            color: $PolytikColor;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+
+
+        &:checked~.form__false-checkbox .check-icon {
+            display: block;
+        }
+    }
+
+    &__false-checkbox {
+        width: 18px;
+        height: 18px;
+        border: 1px solid $CheckColor;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &-label {
+            position: relative;
+        }
+    }
+
+    &__drop-img {
+        position: absolute;
+        bottom: -33%;
+        left: -2%;
+
+        @media (max-width: 1000px) {
+            bottom: -20%;
+        }
+    }
+}
+
+.check-icon {
+    display: none;
+}
+
+.phone-button {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    display: none;
+    align-items: center;
+    column-gap: 5px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    border-bottom: 4px solid $ButtonBorder;
+    background: -webkit-linear-gradient(180deg, #ffe694, #ffd23a);
+    background: -moz-linear-gradient(180deg, #ffe694, #ffd23a);
+    background: linear-gradient(180deg, #ffe694, #ffd23a);
+    cursor: pointer;
+    right: 10px;
+}

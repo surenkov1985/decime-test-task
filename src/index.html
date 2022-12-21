@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="background">
+            <div class="background__color"></div>
+            <img class="background__image" src="./images/background.jpg" alt="background-img">
+            <div class="container">
+                <div class="section__title-container">
+                    <div class="section__title-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px"
+                            height="16px">
+                            <image x="0px" y="0px" width="29px" height="16px"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </div>
+
+                    <h1 class="section__title">Узнайте точную глубину скважины на Вашем участке уже через 5 минут!</h1>
+                </div>
+
+                <p class="section__description">За годы нашей работы мы пробурили скважины почти в каждом населенном
+                    пункте нашей области.</p>
+                <div class="section__present">
+                    <h4 class="section__present-title">И мы точно знаем:</h4>
+                    <div class="section__present-list">
+                        <div class="section__present-item point-item">
+                            <div class="section__present-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="33"
+                                    viewBox="0 0 39 33">
+                                    <image id="free-icon-map-point-2648508" width="39" height="33"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAhCAYAAABa+rIoAAAETUlEQVRYhb2Ya4hVVRTHfzNpVhajTqil5iPDNMisiErLHiI4aUEvQgyiDwXSAyIVK4yKqA9BVEMRFD3wg6iRWSKSfkpLMUqRaibLF5amZWovTesfC/9XTvfufWbujLXgz91nvfY6e5+91l63QRLdpMeAm4HBQCNwFPgWmA+80h3X3QluIrAM+BVYCKwBfnSQIbsd+MnjbTXWnaEIrgto0TF6qcS2UdIy652XkHeIrgTW3xPOKfCmSlopaaOkJZIuLcgWWz/lqxSlwgzWSNpckL3myT+Q9KKkjxLBBz2f8ZdFVpBBkye60vLH/TyySn+y+VP9HIH+mfGZRVaQwd2S9lnW4ADuzei+KWm3xwMkHZI0OqGXRWOd52c0sNPj4cAu4I0arWMUaeQUj38ADgIX1WiVUL3B7QP6ePwLcAbQr0brGA0EehWeTwO+r9Eqo9ySZjDcWznU8j2S3s/o7vQJjvEdko44vaR0k0gyO0BMutA6lznY5yT1Mq/Z6UQeB2+TpLc68FuDXIW4DngU2A2sAz4D2lwBxgIbvE1/AFe5Uhzxc2z1AVeGrcAw/84ADruCBM4GBgFNwHJgbnUQqeAisFWeML6vc4CTLPsL+AqYDLQC9xfsbgLOAjbbvkIr7XMj0BxfkkvefuA7YC8wM+Evua2fSlpbxWvyFt4jqVXS6962MQn7Iu4slK8+CXkFD6SqSEpxv6T7EvxqLJL0d4JfQQ9POCshq8Yg+xpVFtyFdjgg4SAFuXylZBskbUvwc9gl6ZGy4J6t0+E4Bzipiv+Q+U0JmxyWSlpeFtw6SfMzxjk84UBOt3ysn2/J6Ocwy3kzG9xhSbdljMsQW7hFUj8H9naJbg4j/N2NSAXX4izeI2PcEfY6sNUd6JUhVu7hirxYW6MP2OIeoCt0tfPbxC7aB30NXJPKc3GBnF3yVicSgzN5b6akg9Ur1wCMBMbUvEv3KapLb3uZ7abnS+BW8yYB3wAv+2r1m0vb8eCuB/b4d2PJNageisk/dD2ubFX4nuNytsC8KIeLzRsFtLs8Ht/W9wo55klJZ0rqLWmKpJ6J5U8hsvs8SRdb9oykFZKm21fKJoUone8WT+vPkp6qUoy0sN3fwIIC/0bX2DhVfc1rdY8Q+uMTE9aDpyv5Dl8gj0oaknAQd7QZkuYWeKts3F6wmVBYse5itF90YDw86JX7P05pZxG7NT3uc6vdfLT8Bye1QucbcSHdBOyo0fg3xcFp6wGMB6bViLtHzT5x0+y/r1NEozuygz6VnwAfA+t9qiv0KjAvVq7deWiHr+KRpT/31XxvHSFOAW5wpRjmq/pWp5N3HExP4AKnjQnW6w+cWsh/631LfiGCize5y73AuVbu68QcStv9l1abA/4COOS+NT6Fa91XnOx/k2I1Fvl63hmK9vFyB3yF24KYf0OuwYkmZRxwiatGVI+hNopk/TswxKuzFlgBLPXLnAhqAg78A82PqZ8eITUTAAAAAElFTkSuQmCC" />
+                                </svg></div>
+                            <p class="section__present-description point">где есть вода</p>
+                        </div>
+
+                        <div class="section__present-item drill-item">
+                            <div class="section__present-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35"
+                                    viewBox="0 0 35 35">
+                                    <image id="free-icon-drilling-3977868" width="35" height="35"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAEk0lEQVRYhcWYeYjVVRTHP7P4qrEyW5zSMm0qk2mz0myzqAnLdicCg2iBjDYiiiACbcMiWyGKamj5p5CQMrUymsIIwWxTa2oql3FwaJ3RxtRX03zjTN+Hv977zbz3NOvA4d37+5177rn3nPM95/eQVA7vK6lVUleCV3r9nXnP10oaWY7+asqjU4FRwJHALl75u3+bgPkebwZWAOcCz5S6Q7nG/AhkgG8L3sBP5hwNBr4vkBqAKuJ6yqQ4/ZnAl8BqoNYbbwU6gIOBMcBy4Cygd2caE3QtUA/cAjQDnwF1wCXAs8BK4MmCVcUoLZDK4DZJx3o8SNLqHdFXWcTWgSjibTe7KGgSMBp4GbZP744Y0+OAHgo8DLwG3AGM87h8SruuMvgX/U1LJA33szWS3v4v3RS38QHwM3AGcDJwPvCrs+iCghWlUJqFJfD7kto9Ps1om5W0/v8I4CVG4BeABcBdnu8BjC+QLpEiI+4BphpZK4A/gSlG048s0+tgbwNu8+YRvI8Dwyz7uuXmAFcBnwKvGn+KAV+8nx+gJ59wrY2J+dNAt7OjIrEgDH8DuNjPlgGdwHHAYuBSYBGwCZgHvATMKJK1MorfEL7akOa/fniOpGa/a3QmtUiq97MZkjYZCGdJWtCPnjReV+2TP+eiVlFg9z9PMBF4BJgMvOLa8x5wHfCF5Y4AWoFGY859JeiN7KzJVe2TfLUDLQo37e24mewi2eKCGetuAq6xIbhw7gWcXUSvjORVuBHaL+Xa0vgtSU2SBktaajfda7nRni/0fLakxSk60jjqWnsusGoL7E2nSN/9gd+AE4HvHNBPAF8B04GDgAfc85TaLx0QQZ4zptRFyrvyWmdUvY2M2NvHLqq2fCnUt3/OmNYSF+EGalfgc+Brt6ANjploQd8xBNQViZUkRfwpLMoCDwJjgUMssMZ4EWB2lNuDCMaRwGPA/cAQtwxT3WBVGQivto4fgBPsrqhZHxoIhzoBDvVlrPPBegP0ug1wi1z8QmmD0zhQucunXW4QjMb7G/8u9Ya3A+96w1NcQGcBl9nww43qgdZ/AB9bZ9aZPKXvcJI2SqpLifA0flPSPD+f5uxp8HySW4qM500uqGl68nl3SR2VrkUbgGOAmQk/RiwcmOfbGstj0FvlFgLfkBKfLtnE58xs4Mo8XSOACR6Hy3srHWSDrKgnITw9UYNylElshtF3mseX20056rE8dsmKPF3HA9d7XNVnh0FvQsrV5XispDHa5qbmxLthkrZIelTS1jx3zzUwJnVNlDQ+ZY8AzPW51M4WJNs2iuy4wrMXgdMT7yJ7bgZudaCuSrw7x815ki50sKaTpE5JNSnW9sfLJD2V964xb363v8n705HG7dX21/PGlDSQyvp5xuPN9nXWNxI0NyE/0xxQ8JCDPhlHpCD+niEXOLPRlbi7H2PyqcO16TxgC/CJgWu4W84h/gTOuE4VI9ngUWFMl6G7s8iiNLoRuMgGhIEL3e+US30tbc6Yo4H27VDyb1G4qaXaNWdcih9LpbjmXMNeamHMp/jnYkTcTNSjw8r562InUAXQ9he5c8tCrAMiewAAAABJRU5ErkJggg==" />
+                                </svg></div>
+                            <p class="section__present-description drill">на какой она глубине</p>
+                        </div>
+
+                        <div class="section__present-item soil-item">
+                            <div class="section__present-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"
+                                    viewBox="0 0 32 32">
+                                    <image id="free-icon-soil-3381024" width="32" height="32"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFGElEQVRYha2XeaiWVRDGf9ftuluUS6W5prl2MS1FIbVyK8zkmmlEi0W22AJakBRWSFkYZFFU+FdgFqZZllZKi6VtUC5Uekks1zT3Nbcnxvu8dfq+915CHJjvO2dmzjlzZs4sL5JGSVon6aCkGyRhPEfSFElr9S/sNi2TKZU0Q9LhRGa1pCcktZE0UNImSbskjZXUVFK5pNe97/clsQKYA/wKTAGWAvuBocBu4H1gPnAC6AdMBI4ByyyzF5gBrAFqAiOBYUBLoAR4FTjodSeBA8B6YMspWWvdzje6UNI3kpZJ6pLctBDv8E3vz+Fl2F9Sp2Qety9L5g0l7csUGJyzwSBJ9XLojQo2TvFzSaty6Bm+Kekaj3uFAjWohOw/gwuAF4FWFEMfYAFQu4gD84DZwNlAf6BWAf87YJvHqvyVTkoaYDd0y9H6dLC/H3bjatb2ylxwXFJrm+f3HME8jAiZ7f88flU4XNJL5sV72FfL5u8B3FqFWTPoDDxpM74AHC/gNwOeB+o5Sg4BjRxh71hmVeLWivgpOWWGyoMrrEjApcAV3jDgOWAS8CNQ5tCaYF5r4GHgHmADsClRqpbfzHJgJfAnsMOXCYUHhyn+kjRG0tt2x7eSDkg6ImmDfRmJ5jqbrp0jZ7GkqR6H3LNVmL2DpCWSVhbgujQM21j4XUmLJDXxfI6kjyXVKNi0lfPAeknTcg79P3heqsDwggWRhG48QxFxuaTbnT9SelmaB44VPKgHgJlA/YS2AlhU9DQrodwPrG8RpzItPwO0KKBH2i5KQBnc5UdyKKFFjfiiSLIS4uF9BHxdxIGp3quiiBNgF1xls7SU1DYxUzP7Ks+0efiapIU59Np+Z6UJ7bLUBSf8P9tVLoNpwMtFWsN0h10hxD57iqgwHvgK6GJXNACOpBbolaN1dRaIbDYph14VNrFlS12sbpLUICwQiSiSw71AJ2e3bS42O4vucWagG7DVllgR2m20FbZauy1OQh9IGpLc6DZJO0NhSY/m3PRcJ6YKSduNmyXNlzQ6R75FZoEoi58BA5P7XQ88BPQGfgF+BsYC97mTmeeu5miy5nx3O3OB1aZFWR4BdLXsCkfTUafwiZkClziOm9tES71BzB8BRgN3AotNL3Go1kjma4El1ThpjB9uB8+j/tTNHuEgm+Vap9iSHJNhcwb0yOEF1nWrldLqS3pP0lkF9M5pGNb0/0Kg+z/dyn9hnF0y2ZWtq60y01JNgZ+A3xymWeaTrdPMZXlwemahAgGjLDigQIHGrvVDfNB+x/xm86PstvXht/ilx/6HrfQ6YLu7b5zmSzIXXGmzTPb8U/8vSF587zCZpKdyTJ/h046UbZLeqMKVZf4WuVjSnkyBdm7LAnpaMEJnrml9vVkd88ZLmidpjUNtd5LCp0uakHNwdNJfer9Vlt+aZsIGHpcniy5KFEh7gYAVbkJGSHrLDUZ64M3Jl1a510TvcLfb965hqUyBYRZ83PMYP+jxKM+7Sxrn8Q4fkB02Kyc6osN6Jbl95up+kva659iSKXB1svCP8I2kE5JGSuojqbkP/9Ayj3ldfEEdkrTcCkWoDfXXVaELennNSWfMqLw7MwV6JoK1C7qhTwpKdIbxPmbm8BpVkXoDO0pq73EUuQNZJoy0m5XhCJ/4KI24zZqSOubFx2V0uhFau4DoqBs6Y2YyEZ6xR8ecXBIhGOvjyys671mhwA9A+2pSaBxWmtM9RRsXm0UaPj2AjX8DIpAEuxndsEMAAAAASUVORK5CYII=" />
+                                </svg></div>
+                            <p class="section__present-description soil">все особенности грунта Вашего населенного
+                                пункта!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <form class="form__container" action=" " method="post" target="_blank">
+                    <div class="form">
+                        <div class="form__label phone-label">
+                            <input class="form__input phone" type="tel" name="phone"
+                                placeholder="Введите Ваш номер телефона">
+                            <button class="phone-button">
+                                Отправить
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18" height="18" viewBox="0 0 18 18">
+                                    <image id="str_sm" width="18" height="18"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAC40lEQVQ4jV2UzWsUSRiHn6rumclMxwzGjOCYEHZZdfUWFBRj/AiirEj24rJ7FkTdf2Evi/+DqAc9eQhED3pQFMRPED9OiqAHI5o1kziaHZ3MdPdMV5VUd49pfaGooqvfp371fpRgpk1sHzRUXXjrwHAwyRJ/IrxdRGIEBwP8h+rcZ9BMU3fvMNiFJQVKxO4u39uvwBma/XsZBCSg09mwBZXfQshxULeBk8CrnrfMYPawUHjMiLuX/tgxgTjprj04B3jAiLOPZt9jYPePoF8wpSsM6VVIA58NNFKISIFROhTQBSoMsMq7CmxKQFLAbN8FqrocI23IRjtQXYbZLtQzirKzhQ9QRpfO4+pY0X6GxATKASPhS5dbWwXmUI6pfRYYwEIHFlMlPRCpuvWMW4bkPX8xkG7YuHQjri9YWQWujHmYQ3lO/6ZgtAkqhPku+BqEXlEYlY5ICu7kt1hYfarADVXIkCV//1zEHPZ4MiVgWxuMDzUNfpp3V04KzqouFeliDAgBgb275sBPHXZ6MOr5bM7lGCuXyIskN/OtiGufNMdeaPhUAF8EEmQ3DpzJ5LGluNlQXF6WPG1G1JYDvoT6m8qq53JkrQIZQccKoOOSU3MYZ2Osxv67qGA8wmzzUsfKSnBNxLk3PifmJby0H4pQkfCR9y5++IDVpY30DnQNO0uarBkiTr0O+Pe5gTkHnCIMCiiY5CbKPHUZcmZocTSu2LgdNP+sSzpnvh1y4FnIi1oBag6IIlTTxFiAEck6CC8KpgOYy99ng9hFB7Cx2OCD48CshpoL/XkoZwDZ4lzkISPhuGDa5pBNNPoeUaEcb9Y1hMAaCaW0NbLWK5UWn6k1d7A5/7LXa68Igt9p0IhPHJIwLG1NJpBeRpP79CD/8zGcIg17tvvvIto7eKcfxClNno6VkohViGTU9T2Wgu3AvZ7zj++RfV8maLUPUs//QTE3QcQwOfK4zBHoWzj+JSje+M4L+AoEVRPoJCdv8QAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </button>
+                        </div>
+                        <label class="form__label sity-label">
+                            <input class="form__input sity" type="text" name="sity"
+                                placeholder="Напишите Ваш населенный пункт">
+                        </label>
+
+
+                        <button class="form__submit" type="submit"><span>Узнать глубину скважины</span></button>
+                    </div>
+                    <label class="form__polytik">
+                        <span class="form__checkbox-label">
+                            <input class="form__checkbox" type="checkbox" name="polytik">
+                            <span class="form__false-checkbox">
+                                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+                                    <path fill-rule="evenodd" fill="rgb(134, 134, 134)"
+                                        d="M3.312,4.819 L4.658,7.497 C4.658,7.497 6.845,2.057 10.294,0.245 C10.210,1.539 9.874,2.661 10.463,4.043 C8.948,4.386 5.836,8.271 4.826,10.172 C3.396,8.359 1.713,6.977 0.536,6.546 L3.312,4.819 Z" />
+                                </svg>
+                            </span>
+
+                        </span>
+                        <span class="form__polytik-text">
+                            Я даю согласие на обработку своих персональных данных и ознакомлен с
+                            <a href="" class="form__polytik-link">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                    <div class="form__drop-img">
+                        <img class="drop-img" src="./images/drop.png" alt="">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

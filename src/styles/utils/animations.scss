@@ -1,0 +1,11 @@
+@keyframes err {
+    from {
+        border-color: $InputColor;
+        background: $DefFontColor;
+    }
+
+    to {
+        border-color: $ErrorColor;
+        background: rgba($ErrorColor, 0.1);
+    }
+}
